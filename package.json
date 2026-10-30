@@ -1,0 +1,35 @@
+{
+  "name": "jotunheim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx --watch mercury/server.ts",
+    "start": "tsx mercury/server.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clash-of-Prodigies/Jotunheim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Clash-of-Prodigies/Jotunheim/issues"
+  },
+  "homepage": "https://github.com/Clash-of-Prodigies/Jotunheim#readme",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "fastify": "^5.12.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

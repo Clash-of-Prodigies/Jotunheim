@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "NodeNext",   
+        "moduleResolution": "NodeNext",
+
+        "rootDir": "mercury",
+        "outDir": "./dist",
+
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "exactOptionalPropertyTypes": true,
+        "forceConsistentCasingInFileNames": true,
+
+        "esModuleInterop": true,
+        "verbatimModuleSyntax": true,
+        "isolatedModules": true,
+        "skipLibCheck": true,
+
+        "types": ["node"],
+        "paths": {
+            "@mercury/*": ["./mercury/*"]
+        }
+    },
+    "include": ["mercury/**/*.ts"],
+    "exclude": ["node_modules", "dist", "*.sqlite*"]
+}
