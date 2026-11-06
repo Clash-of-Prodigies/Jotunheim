@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tsx --test mercury/*.test.ts mercury/**/*.test.ts",
     "dev": "tsx --watch mercury/server.ts",
     "start": "tsx mercury/server.ts",
+    "mock:kahoot": "tsx mercury/scripts/mock-kahoot.ts",
+    "replay:kahoot": "tsx mercury/scripts/replay-kahoot.ts",
+    "import:players": "tsx mercury/scripts/import-players.ts",
+    "import:fixtures": "tsx mercury/scripts/import-fixtures.ts",
     "typecheck": "tsc --noEmit",
     "build": "tsc"
   },
@@ -24,7 +28,8 @@
   "homepage": "https://github.com/Clash-of-Prodigies/Jotunheim#readme",
   "dependencies": {
     "better-sqlite3": "^13.0.3",
-    "fastify": "^5.12.7"
+    "fastify": "^5.12.7",
+    "socket.io-client": "^4.8.4"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^9.6.0",

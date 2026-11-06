@@ -1,0 +1,10 @@
+{
+  "publish_enabled": true,
+  "replay_logging": false,
+  "rate_limit_ms": 1000,
+  "confirmation_timeout_ms": 10000,
+  "session_finish_grace_ms": 10000,
+  "challenge_place_base_url": "https://api.challengeplace.com",
+  "challenge_place_language": "en-us",
+  "log_directory": ".local/clash-relay"
+}

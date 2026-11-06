@@ -4,7 +4,7 @@
         "module": "NodeNext",   
         "moduleResolution": "NodeNext",
 
-        "rootDir": "mercury",
+        "rootDir": "mimir",
         "outDir": "./dist",
 
         "strict": true,
@@ -22,6 +22,6 @@
             "@mercury/*": ["./mercury/*"]
         }
     },
-    "include": ["mercury/**/*.ts"],
+    "include": ["mimir/**/*.ts"],
     "exclude": ["node_modules", "dist", "*.sqlite*"]
 }
