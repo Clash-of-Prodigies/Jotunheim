@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent
 
 def parser() -> argparse.ArgumentParser:
     command = argparse.ArgumentParser(description=__doc__)
-    command.add_argument("--bank", type=Path, default=BASE_DIR / "questions.json")
+    command.add_argument("--bank", type=Path, default=BASE_DIR / "kahoot.json")
     command.add_argument("--pool", type=Path, default=BASE_DIR / "pool")
     command.add_argument("--template", type=Path, default=BASE_DIR / "question.typ")
     command.add_argument("--logo", type=Path, default=BASE_DIR / "assets" / "logo.png")
